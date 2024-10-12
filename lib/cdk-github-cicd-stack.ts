@@ -12,16 +12,16 @@ export class CdkGithubCicdStack extends cdk.Stack {
       synth: new ShellStep('Synth', {
         input: CodePipelineSource.gitHub('nduevans/cdk-github-cicd', 'main'),
         commands: [
-          'cd cdk-github-cicd',
+          // 'cd cdk-github-cicd',
           'npm ci', // clean install
           'npx cdk synth'
         ],
-        primaryOutputDirectory: 'cdk-github-cicd/cdk.out'
+        primaryOutputDirectory: 'cdk.out'
       })
     });
 
-    const testStage = pipeline.addStage(new PipelineStage(this, 'PipelineStage', {
-      stageName: 'TestStage',
-    }))
+    // const testStage = pipeline.addStage(new PipelineStage(this, 'PipelineStage', {
+    //   stageName: 'TestStage',
+    // }))
   }
 }
