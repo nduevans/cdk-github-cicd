@@ -20,8 +20,8 @@ export class CdkGithubCicdStack extends cdk.Stack {
       })
     });
 
-    // const testStage = pipeline.addStage(new PipelineStage(this, 'PipelineStage', {
-    //   stageName: 'TestStage',
-    // }))
+    const testStage = pipeline.addStage(new PipelineStage(this, 'PipelineStage', {
+      stageName: 'TestStage',
+    }))
   }
 }
