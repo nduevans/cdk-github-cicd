@@ -6,3 +6,5 @@ import { CdkGithubCicdStack } from '../lib/cdk-github-cicd-stack';
 const app = new cdk.App();
 new CdkGithubCicdStack(app, 'CdkGithubCicdStack', {
 });
+
+app.synth();
