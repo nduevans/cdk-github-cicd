@@ -10,7 +10,7 @@ export class CdkGithubCicdStack extends cdk.Stack {
     const pipeline = new CodePipeline(this, 'CDKGithubPipeline', {
       pipelineName: 'CDKGithubPipeline',
       synth: new ShellStep('Synth', {
-        input: CodePipelineSource.gitHub('nduevans/cdk-github-cicd', 'main'),
+        input: CodePipelineSource .gitHub('nduevans/cdk-github-cicd', 'main'),
         commands: [
           // 'cd cdk-github-cicd', // no need to navigate any folder
           'npm ci', // clean install
