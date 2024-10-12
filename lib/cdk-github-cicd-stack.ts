@@ -12,7 +12,7 @@ export class CdkGithubCicdStack extends cdk.Stack {
       synth: new ShellStep('Synth', {
         input: CodePipelineSource.gitHub('nduevans/cdk-github-cicd', 'main'),
         commands: [
-          // 'cd cdk-github-cicd',
+          // 'cd cdk-github-cicd', // no need to navigate any folder
           'npm ci', // clean install
           'npx cdk synth'
         ],
@@ -26,7 +26,7 @@ export class CdkGithubCicdStack extends cdk.Stack {
 
     testStage.addPre(new CodeBuildStep('unit-tests', {
       commands: [
-        'cd cdk-github-cicd',
+        // 'cd cdk-github-cicd',
         'npm ci',
         'npm test'
       ]
