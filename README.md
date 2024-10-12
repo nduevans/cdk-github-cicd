@@ -1,8 +1,6 @@
-# Welcome to your CDK TypeScript project
+# AWS CDK / Typescript / Codepipeline with unit-tests Example
 
-This is a blank project for CDK development with TypeScript.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+AWS CDK (Infrastructure as Code) You can use this template to start your project for deploying serverless applications in AWS - Lambda, DynamoDB, APIGateway, etc
 
 ## Useful commands
 
