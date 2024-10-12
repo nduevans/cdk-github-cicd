@@ -1,6 +1,6 @@
 # AWS CDK / Typescript / Codepipeline with unit-tests Example
 
-AWS CDK (Infrastructure as Code) You can use this template to start your project for deploying serverless applications in AWS - Lambda, DynamoDB, APIGateway, etc
+AWS CDK (Infrastructure as Code) You can use this template to start your CI/CD-ed project for deploying serverless applications in AWS - Lambda, DynamoDB, APIGateway, etc
 
 ## Useful commands
 
